@@ -10,11 +10,11 @@ def byte2Per(nbyte):
 	return nbyte*(1/255)
 
 def generate_number(self):
-	self.random_lblnumdado.text = str(random.randint(0,6))
+	self.random_lblnumdado.text = str(random.randint(1,6))
 
 class Dados(App):
 	def btnaccion_press(self,obj):
-		self.lblnumdado.text = str(random.randint(0,6))
+		self.lblnumdado.text = str(random.randint(1,6))
 		with self.lbltitulo.canvas:
 			Color(byte2Per(34),0,byte2Per(159),1)
 			Rectangle(pos=self.lbltitulo.pos, size=self.lbltitulo.size)
